@@ -1,0 +1,181 @@
+@media only screen and (max-width: 890px) {
+    .basic-box {
+        height: 350px;
+        width: 250px;
+    }
+    
+    .premium-box {
+        height: 390px;
+        width: 270px;
+    }
+    
+    .ultra-box {
+        height: 410px;
+    }
+
+    .newslatter .container {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .news-box {
+        margin-bottom: 30px;
+    }
+
+    footer .container {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .footer-p {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 848px) {
+    /* aplicação do flex-wrap => deixe como wrap o conteúdo que componha todos os elementos */
+
+    .plans-box {
+        flex-wrap: wrap;
+    }
+
+    .basic, .premium, .ultra {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* defina o width para cada caixa */
+
+    .basic-box {
+        width: 300px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    
+    .premium-box {
+        width: 300px;
+    }
+    
+    .ultra-box {
+        width: 300px;
+    }
+
+    .news-p {
+        width: 100%;
+        max-width: 250px;
+    } 
+}
+
+@media only screen and (max-width: 780px) {
+    .box-vantagem-break {
+        max-width: 220px;
+    }
+}
+
+@media only screen and (max-width: 719px) {
+    .box-vantagem {
+        justify-content: center;
+        align-items: center;
+    } 
+}
+
+@media only screen and (max-width: 698px) {
+    .main-content-box {
+        margin-top: 50px;
+        flex-direction: column;
+    }
+
+    .main-content--image img {
+        width: 100%;
+    }
+
+    .courses {
+        flex-direction: column;
+    }
+
+    .courses-p {
+        padding: 0px;
+        text-align: center;
+    }
+
+    .ia--image img, .front--image img, .security--image img{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 677px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .menu-mobile img {
+        width: 40px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .plans-box {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .basic-box {
+        width: 250px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    
+    .premium-box {
+        width: 250px;
+        margin-left: 30px;
+    }
+    
+    .ultra-box {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .news-box {
+        width: 100%;
+    } 
+
+    .news-email input{
+        width: 100%;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+    }
+    
+    .news-button {
+        font-size: 20px;
+        margin-left: 50px;
+    }
+} 
+
+@media only screen and (max-width: 480px) {
+   .box-vantagem {
+       justify-content: center;
+       align-items: center;
+   } 
+}
+
+@media only screen and (max-width: 425px) {
+    .about-us--content h1 {
+        font-size: 30px;
+    }
+
+    .title-box--text {
+        font-size: 30px;
+    }
+
+    .ia--image img, .front--image img, .security--image img{
+        width: 60%;
+    }
+}

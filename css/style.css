@@ -1,0 +1,350 @@
+* {
+    top: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --clt-text-dark : #000;
+    --clt-green-color : #0BF96A;
+    --clt-pink-color  : #E10BF9;
+    --clt-pink-light-color : #F3A0FD;
+}
+
+header {
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    background-color: var(--clt-green-color);
+}
+
+.container {
+    display: flex;
+    width: 990px;
+    justify-content: space-between;
+    /* background-color: rgb(182, 182, 208); */
+}
+
+.logo, .menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.logo img {
+    margin-left: 21px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    color: var(--clt-text-dark);
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 5px;
+}
+
+.about-us {
+    display: flex;
+    justify-content: center;
+}
+
+.about-us--content, .our--courses-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.about-us--content h1 {
+    max-width: 500px;
+    font-size: 50px;
+    margin-top: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.title-box {
+    margin-top: 30px;
+}
+
+.title-box--bar {
+    height: 2px;
+    width: 50%;
+    margin-top: 10px;
+    margin: auto;
+    background-color: var(--clt-pink-color);
+}
+
+.title-box--text {
+    font-size: 45px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.main-content-box {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-content--p {
+    font-size: 15px;
+    max-width: 540px;
+    line-height: 23px;
+    padding-left: 20px;
+}
+
+.main-content--image {
+    flex: 1;
+}
+
+.main-content--image img {
+    width: 400px;
+}
+
+.our-courses {
+    display: flex;
+    justify-content: center;
+}
+
+.courses {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.ia , .front , .security {
+    flex: 1;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ia--image img, .front--image img, .security--image img{
+    width: 100%;
+}
+
+.courses-text {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.courses-p {
+    padding-left: 60px;
+    padding-right: 40px;
+    text-align: left;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    background-color: var(--clt-pink-light-color);
+}
+
+.plans-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.plans-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.basic , .premium, .ultra {
+    flex: 1;
+}
+
+.basic-box {
+    height: 300px;
+    margin-right: 30px;
+    margin-top: 80px;
+    border: 2px solid var(--clt-green-color);
+}
+
+.premium-box {
+    height: 340px;
+    margin-top: 40px;
+    margin-right: 30px;
+    border: 2px solid var(--clt-green-color);
+}
+
+.ultra-box {
+    height: 358px;
+    margin-top: 20px;
+    border: 2px solid var(--clt-pink-color);
+    background-color: var(--clt-green-color);
+}
+
+.plans-title {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.plans-price {
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.plans-desc {
+    margin-top: 20px;
+}
+
+.plans-desc ul li {
+    margin-top: 10px;
+    list-style: disc;
+    color: var(--clt-text-dark);
+}
+
+.plans-buy {
+    padding: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 15px;
+    display: inline-block;
+    border: 1px solid var(--clt-green-color);
+}
+
+.pink {
+    border: 1px solid var(--clt-pink-color);
+}
+
+.premium-box .plans-title {
+    margin-top: 11px;
+}
+
+/* ****************************
+Aplicação do flex-wrap
+*******************************/
+
+.vantagem {
+    display: flex;
+    justify-content: center;
+}
+
+/* ****************************
+Aplicação do flex-wrap
+*******************************/
+
+.box-vantagem {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* ***************************************
+Definindo a largura mínima para cada box
+******************************************/
+
+.box-vantagem-break {
+    width: 100%;
+    margin: 10px;
+    max-width: 240px;
+}
+
+.green-dark::before {
+    content: "";
+    margin-right: 10px;
+    border-left: 12px solid var(--clt-green-color);
+}
+
+.box-title {
+    font-size: 28px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.newslatter {
+    display: flex;
+    justify-content: center;
+    background-color: var(--clt-green-color);
+}
+
+.newslatter .container {
+    padding: 20px;
+    align-items: center;
+}
+
+.news-title {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.news-p {
+    width: 200px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.news-box {
+    display: flex;
+    height: 80px;
+    width: 600px;
+    align-items: center;
+    background-color: var(--clt-pink-color);
+    justify-content: space-between;
+}
+
+.news-email input {
+    width: 350px;
+    padding: 20px;
+    margin-left: 10px;
+    font-style: italic;
+}
+
+::placeholder {
+    font-size: 20px;
+}
+
+.news-button {
+    font-size: 40px;
+    margin-right: 50px;
+    text-transform: uppercase;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--clt-pink-light-color);
+}
+
+footer .container {
+    padding: 20px;
+    align-items: center;
+}
+
+.footer-p {
+    width: 400px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
